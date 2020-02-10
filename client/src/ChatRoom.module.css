@@ -1,0 +1,54 @@
+.chatroom {
+  border: solid 0.1px #83838385;
+  width: 400px;
+  height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  border: solid 0.1px #83838385;
+  padding: 20px;
+  flex: 0 1 auto;
+}
+
+.content {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+  flex: 1 1 auto;
+}
+
+/* Let's get this party started */
+.content::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Handle */
+.content::-webkit-scrollbar-thumb {
+  /* -webkit-border-radius: 10px;
+  border-radius: 10px; */
+  background: rgba(0, 255, 200, 0.8);
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); */
+}
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  flex: 0 1 40px;
+}
+
+.input {
+  width: 100%;
+  background: #353535a6;
+  border: 0 none;
+  padding: 10px 20px;
+  color: white;
+}
+.dummy {
+  height: 0;
+}
